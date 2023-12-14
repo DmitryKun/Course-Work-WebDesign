@@ -1,0 +1,10 @@
+.shopping-cart{
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+.shopping-cart:hover,
+.shopping-cart:active{
+    color: darkgreen;
+}

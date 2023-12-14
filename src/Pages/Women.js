@@ -13,7 +13,8 @@ export default class Women extends Component{
                         {products
                             .filter(product => product.category === 'Women')
                             .map((product)=> {
-                                return <Product title={product.title}
+                                return <Product id={product.id}
+                                                title={product.title}
                                                 img={product.img}
                                                 price={product.price}
                                                 category={product.category}

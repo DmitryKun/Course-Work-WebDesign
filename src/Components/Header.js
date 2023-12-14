@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./logo.png"
-import {BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Accessories from "../Pages/Accessories";
 import Men from "../Pages/Men";
 import Women from "../Pages/Women";
 import Home from "../Pages/Home";
+import Order from "../Pages/Order";
+import "./style.css"
 
 export default class Header extends Component {
     render() {
@@ -41,6 +43,7 @@ export default class Header extends Component {
                         <Route exact path="/men" element={<Men/>} />
                         <Route exact path="/women" element={<Women/>} />
                         <Route exact path="/accessories" element={<Accessories/>} />
+                        <Route exact path="/order/:id" element={<Order/>} />
                     </Routes>
                 </Router>
             </>
